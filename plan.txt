@@ -1,0 +1,19 @@
+
+warrior
+mage
+cleric
+ranger
+necromancer
+- class levels
+
+//
+
+equipment
+shop system
+consumable system
+
+//
+
+battle system - turn based
+world levels
+    different monsters
