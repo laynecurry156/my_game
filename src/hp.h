@@ -5,6 +5,17 @@ class hp {
 
     public:
 
+    //default constructor 
+    hp() { 
+        current_hp = 1;
+        max_hp = 1;
+    }
+    hp(hp_t current, hp_t max) {
+        current_hp = current;
+        max_hp = max;
+        if (current_hp > max_hp) current_hp = max_hp;
+    }
+
     bool set_max_hp (hp_t new_max_hp) {
         if (new_max_hp < 1) {
             return false;
