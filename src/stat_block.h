@@ -1,10 +1,9 @@
 #pragma once
 #include "stat_type.h"
 
-struct stat_block {
+class stat_block {
 
-    stat_t strength;
-    stat_t intellect;
+public:
 
     //default constructor
     stat_block() {
@@ -16,5 +15,17 @@ struct stat_block {
         strength = new_strength;
         intellect = new_intellect;
     }
+
+    stat_t get_strength () {
+        return strength;
+    }
+
+    stat_t get_intel () {
+        return intellect;
+    }
+
+private:
+    stat_t strength;
+    stat_t intellect;
 
 };

@@ -6,7 +6,7 @@ class Warrior : public hp, public stat_block {
 
 public:
     static const hp_t HP_GROWTH = 19;
-    static const stat_t BASE_STRENGTH = 10;
+    static const stat_t BASE_STRENGTH = 4;
     static const stat_t BASE_INTEL = 1;
     Warrior();
 
