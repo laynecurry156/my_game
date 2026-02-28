@@ -1,19 +1,25 @@
 
-warrior
-mage
-cleric
-ranger
-necromancer
-- class levels
+### classes
 
-//
+- warrior | hp growth 19 | damage reduction
+- mage | hp growth 10 | high damage magic
+- cleric | hp growth 11 | support magic
+- ranger | hp growth 14 | ranged damage
+- necromancer | hp growth 12 | summons
 
-equipment
-shop system
-consumable system
+### leveling system
 
-//
+- gain stats based on class
+- gain abilities based on levels
 
-battle system - turn based
-world levels
-    different monsters
+### equipment
+
+- equipment
+- shop system
+- consumable system
+
+### game loop
+
+- battle system: turn based
+- world levels
+- different monsters
