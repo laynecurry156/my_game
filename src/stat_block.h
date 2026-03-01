@@ -1,5 +1,8 @@
 #pragma once
-#include "stat_type.h"
+#include <cstdint>
+
+typedef std::int16_t stat_t; // 0 - 255
+
 
 class stat_block {
 
