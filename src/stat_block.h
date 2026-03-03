@@ -10,25 +10,31 @@ public:
 
     //default constructor
     stat_block() {
-        strength = 1;
-        intellect = 1;
+        m_strength = 1;
+        m_intellect = 1;
     }
     explicit stat_block(stat_t new_strength, stat_t new_intellect) { 
         //explicit makes it so only stat_t is excepted
-        strength = new_strength;
-        intellect = new_intellect;
+        m_strength = new_strength;
+        m_intellect = new_intellect;
     }
 
     stat_t get_strength () {
-        return strength;
+        return m_strength;
     }
 
     stat_t get_intel () {
-        return intellect;
+        return m_intellect;
     }
 
 private:
-    stat_t strength;
-    stat_t intellect;
+    stat_t m_strength;
+    stat_t m_intellect;
+
+protected:
+    void increase_stats(stat_t new_strength, stat_t new_intellect) {
+        m_strength += new_strength;
+        m_intellect += new_intellect;
+    }
 
 };
