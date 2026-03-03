@@ -3,10 +3,18 @@
 
 int main () {
 
-    Mage mage1;
+    Cleric cler1;
 
-    std::cout << "Mage HP (max | current): " << mage1.get_max_hp() << " | " << mage1.get_current_hp(); 
-    std::cout << "\nMage Strength | Intellect: " << mage1.get_strength() << " | " << mage1.get_intel() << std::endl;
+    for (int i = 0; i < 10; i++) {
+        std::cout << "Cleric:\n"
+            << "Max HP | Current HP: " << cler1.get_max_hp() << " | " << cler1.get_current_hp() << "\n"
+            << "Strength: " << cler1.get_strength() << "\n"
+            << "Intellect: " << cler1.get_intel() << "\n"
+            << "Level: " << cler1.get_level() << "\n"
+            << "EXP: " << cler1.get_current_exp() << "/" << cler1.get_exp_to_next_level() << "\n"
+            << "-----------------------------\n";
+        cler1.gain_exp(100);
+    }
 
     return 0;
 }

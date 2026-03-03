@@ -20,6 +20,7 @@ private:
     void level_up() override {
         set_max_hp(get_max_hp() + HP_GROWTH);
         increase_stats(STRE_GROWTH, INTE_GROWTH);
+        heal(get_max_hp()); //for now, keeping this bc I want them to heal fully when leveling up, might remove in future
     }
 
 };
